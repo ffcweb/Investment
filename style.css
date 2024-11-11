@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sm-contanier {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-banner {
+  padding: 200px 0;
+  background: url(https://images.unsplash.com/photo-1712530187754-5e4d34263ac5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.navbar-nav {
+  gap: 35px;
+}
+
+.card-right {
+  padding: 170px 0;
+  background: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    rgba(0, 0, 0, 0.2);
+  background-position: right;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.bg-divider {
+  background: url(https://images.unsplash.com/photo-1712530187754-5e4d34263ac5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+}
+
+/* btn  hover*/
+.btn {
+  transition: width 2s;
+}
+
+.btn:hover {
+  border-color: aqua !important;
+  text-transform: uppercase;
+}
+
+/* banner-font-scale */
+.banner-font-animation {
+  animation-name: scale;
+  animation-duration: 2s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(2, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* image animation */
+.img-animation:hover {
+  animation-name: scale;
+  animation-duration: 2s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* slide in animation */
+@keyframes slidein {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slidein-animation {
+  animation: 2s linear 2s 1 running slidein;
+}
+
+/* card animation */
+/* .card-animation:hover {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 750px) and (min-width: 600px) {
+  .card-left {
+
+    margin: 10px 0px !important;
+  }
+} */
