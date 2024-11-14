@@ -18,13 +18,13 @@ p {
 }
 
 .sm-contanier {
-  max-width: 500px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .big-banner {
-  padding: 200px 0;
+  padding: 400px 0;
   background: url(https://images.unsplash.com/photo-1712530187754-5e4d34263ac5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
     rgba(0, 0, 0, 0.4);
   background-position: center;
@@ -48,11 +48,18 @@ p {
 .bg-divider {
   background: url(https://images.unsplash.com/photo-1712530187754-5e4d34263ac5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(65, 63, 63, 0.7);
+  height: 400px;
 }
 
-/* btn  hover*/
-.btn {
-  transition: width 2s;
+.card {
+  background-color: rgba(226, 214, 214, 0.2);
+}
+
+.card:hover {
+  background-color: rgba(31, 31, 209, 0.2);
 }
 
 .btn:hover {
@@ -60,12 +67,11 @@ p {
   text-transform: uppercase;
 }
 
-/* banner-font-scale */
-.banner-font-animation {
+/* .banner-font-animation {
   animation-name: scale;
   animation-duration: 2s;
-}
-
+} */
+/* 
 @keyframes scale {
   0% {
     transform: scale(1, 1);
@@ -77,15 +83,15 @@ p {
   100% {
     transform: scale(1, 1);
   }
-}
+} */
 
 /* image animation */
-.img-animation:hover {
+/* .img-animation:hover {
   animation-name: scale;
   animation-duration: 2s;
-}
+} */
 
-@keyframes scale {
+/* @keyframes scale {
   0% {
     transform: scale(1, 1);
     opacity: 0.3;
@@ -96,29 +102,29 @@ p {
   100% {
     transform: scale(1, 1);
   }
-}
+} */
 
 /* slide in animation */
-@keyframes slidein {
+/* @keyframes slidein {
   from {
-    transform: translateX(80%);
+    transform: translateX(20%);
   }
   to {
     transform: translateX(0%);
   }
-}
-
+} */
+/* 
 .slidein-animation {
   animation: 2s linear 2s 1 running slidein;
-}
+} */
 
 /* card animation */
 /* .card-animation:hover {
   animation-name: rotate;
   animation-duration: 0.5s;
-}
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(0);
     opacity: 0.5;
@@ -126,11 +132,10 @@ p {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media screen and (max-width: 750px) and (min-width: 600px) {
   .card-left {
-
     margin: 10px 0px !important;
   }
-} */
+}
